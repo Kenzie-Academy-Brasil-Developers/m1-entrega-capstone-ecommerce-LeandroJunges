@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(199, 189, 189);
+}
+.logo{
+    width: 5%;
+    height: 5%;
+    border-radius: 100px;
+}
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.lista, li, a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 9.5px;
+    text-decoration: none;
+}
+
+.principal{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+  
+.container{
+   
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 100px;
+    column-gap: 20px;
+}
+
+.card-camisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 296px;
+    height: 410px;
+}
+input:hover{
+  border: 3px solid rgba(55, 38, 140, 1); ;
+}
+.lateral  {
+    width: 345px;
+    height: 505px;
+    margin: 0 auto;
+    padding: 10px ;
+}
+input{
+    margin: 0px auto;
+    padding: 10px;
+}
+#pesquisa{
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    background-color: rgba(55, 38, 140, 1);
+    color: #ffffff;
+}
+.carrinho {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        color: #ffffffff;
+        margin-top: 200px;
+}
+.buy{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(55, 38, 140, 1);
+    color:#ffffff;
+    border-radius: 50px;
+
+}
+table{
+    background: black;
+    margin-top: 10px;
+}
+a:hover{
+    font-family: sans-serif;
+    color: rgb(82, 78, 78);
+    font-weight: bolder;
+}
+a{
+    font-size: 18pt;
+}
+.card-camisa:hover{
+    background-color: gray;
+}
+.add{
+  background-color:rgba(55, 38, 140, 1);
+  color: #ffffff;
+  padding: 7px;
+  border-radius: 10px;  
+}
+.categoria{
+    background-color: rgb(199, 189, 189);
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(82, 78, 78);
+}
