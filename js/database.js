@@ -16,7 +16,7 @@ const data = [
     img: "../img/gorro.svg",
     nameItem: "Black Hat",
     description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
+      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste que garante que...",
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Acessórios"],
@@ -61,4 +61,5 @@ const data = [
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
   },
+  
 ];
