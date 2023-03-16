@@ -1,4 +1,64 @@
+html, body, div, span, applet, object, iframe,
+h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+h1{
+    font-size: 30pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+h2, .pharagraphCar{
+    color: black;
+}
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background: url("https://thumbs.dreamstime.com/z/fundo-infinito-da-roupa-58022446.jpg"); */
+
     background-color: rgb(199, 189, 189);
 }
 .logo{
@@ -12,7 +72,7 @@ body{
     width: 100%;
     
 }
-.lista, li, a {
+.lista, .links, a {
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -34,52 +94,79 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    row-gap: 100px;
+    row-gap: 50px;
     column-gap: 20px;
 }
 
 .card-camisa{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 296px;
     height: 410px;
+}
+.card-camisa:hover{
+    background-color: gray;
 }
 input:hover{
   border: 3px solid rgba(55, 38, 140, 1); ;
 }
 .lateral  {
-    width: 345px;
+    width: 350px;
     height: 505px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px ;
+
 }
 input{
-    margin: 0px auto;
+    margin: 0px 30px 0px auto;
     padding: 10px;
 }
 #pesquisa{
+    font-size: 12pt;
     border-radius: 50px;
     border: none;
     padding: 10px;
     background-color: rgba(55, 38, 140, 1);
     color: #ffffff;
 }
-.carrinho {
+.carrinho {    
+        width: 350px;
+        height: 300px;
         display: flex;
         flex-direction: column;
-        width: 300px;
         color: #ffffffff;
-        margin-top: 200px;
+        overflow: auto;
 }
+.itensCarrinho{
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
+    max-width: max-content;
+    align-items: flex-end;
+}
+
+#imgCarrinho{
+    width: 30%;
+}
+
+.tituloProdutoCarrinho{
+    text-align: center;
+    font-size: 14pt;
+}
+
 .buy{
+    border: 0.5px solid rgba(55, 38, 140, 1);
+    border-radius: 10px;
+    text-align: center;
     padding: 10px;
-    margin-bottom: 10px;
     background-color: rgba(55, 38, 140, 1);
     color:#ffffff;
-    border-radius: 50px;
 
 }
+.buy:hover{
+    background-color: gray
+ }
 table{
     background: black;
     margin-top: 10px;
@@ -92,9 +179,7 @@ a:hover{
 a{
     font-size: 18pt;
 }
-.card-camisa:hover{
-    background-color: gray;
-}
+
 .add{
   background-color:rgba(55, 38, 140, 1);
   color: #ffffff;
@@ -106,4 +191,17 @@ a{
     text-align: center;
     border-radius: 50px;
     color: rgb(82, 78, 78);
+}
+.add:hover{
+   background-color: gray
+}
+#pesquisa:hover{
+    background-color: gray
+ }
+.soma{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
 }
